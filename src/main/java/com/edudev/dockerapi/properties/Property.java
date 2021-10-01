@@ -4,14 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.Instant;
 
-@Entity(name = "tb_property")
+@Entity
+@Table(name = "tb_property")
 @NoArgsConstructor(force = true)
 @RequiredArgsConstructor
 public final class Property {
