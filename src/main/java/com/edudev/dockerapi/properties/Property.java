@@ -1,6 +1,7 @@
 package com.edudev.dockerapi.properties;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
@@ -12,6 +13,7 @@ import java.time.Instant;
 @Table(name = "tb_property")
 @NoArgsConstructor(force = true)
 @RequiredArgsConstructor
+@Getter
 public final class Property {
 
     @Id
@@ -24,11 +26,11 @@ public final class Property {
 
     private BigDecimal price;
 
-    private Integer numbersOfRooms;
+    private Integer rooms;
 
     private final PropertyType propertyType;
 
-    private final Instant createdAt;
+    private final Instant createdAt = Instant.now();
 
-    private Instant updatedAt;
+    private Instant updatedAt = Instant.now();
 }
