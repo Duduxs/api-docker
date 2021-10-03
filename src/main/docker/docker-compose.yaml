@@ -11,7 +11,7 @@ services:
       - DATABASE_USERNAME=root
       - DATABASE_PASSWORD=123456
     ports:
-      - 8085:8085
+      - "8085:8085"
     depends_on:
       - mysql-service
     networks:
@@ -25,7 +25,7 @@ services:
       MYSQL_ROOT_PASSWORD: 123456
       MYSQL_DATABASE: immobile
     ports:
-      - 3306:3306
+      - "3306:3306"
     networks:
       - api-docker-mysql-network
     volumes:

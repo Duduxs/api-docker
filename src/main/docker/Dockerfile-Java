@@ -1,9 +1,9 @@
-FROM openjdk:11
+FROM openjdk:17-jdk-oraclelinux8
 
 WORKDIR /docker-api
 
-ENV HTTP_PORT="8084" \
-    DATABASE_URL="jdbc:mysql://mysql-container:3306/immobile" \
+ENV HTTP_PORT="8085" \
+    DATABASE_URL="jdbc:mysql://localhost:3306/immobile" \
     DATABASE_USERNAME="root" \
     DATABASE_PASSWORD="123456"
 
