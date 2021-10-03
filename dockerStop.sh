@@ -1,3 +1,4 @@
-docker rm --force api-docker && docker rm --force mysql-container
+docker rm --force api-docker && docker rm --force postgresql-container
 
-docker rmi api-docker-image && docker rmi mysql
+docker rmi api-docker-image && docker rmi postgres
+
