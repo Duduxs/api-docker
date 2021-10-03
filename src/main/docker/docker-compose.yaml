@@ -1,0 +1,39 @@
+version: "3.1"
+
+services:
+  api-docker:
+    container_name: api-docker
+    image: api-docker-image
+    restart: always
+    environment:
+      - HTTP_PORT=8085
+      - DATABASE_URL=jdbc:mysql://mysql-container:3306/immobile
+      - DATABASE_USERNAME=root
+      - DATABASE_PASSWORD=123456
+    ports:
+      - 8085:8085
+    depends_on:
+      - mysql-service
+    networks:
+      - api-docker-mysql-network
+
+  mysql-service:
+    container_name: mysql-container
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: immobile
+    ports:
+      - 3306:3306
+    networks:
+      - api-docker-mysql-network
+    volumes:
+      - api-docker-mysql-volume:/var/lib/mysql
+
+networks:
+  api-docker-mysql-network:
+    driver: bridge
+
+volumes:
+  api-docker-mysql-volume:

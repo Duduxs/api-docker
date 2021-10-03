@@ -1,0 +1,14 @@
+FROM openjdk:11
+
+WORKDIR /docker-api
+
+ENV HTTP_PORT="8084" \
+    DATABASE_URL="jdbc:mysql://mysql-container:3306/immobile" \
+    DATABASE_USERNAME="root" \
+    DATABASE_PASSWORD="123456"
+
+COPY target/*.jar /docker-api/app.jar
+
+CMD ["java", "-jar", "/docker-api/app.jar"]
+
+RUN echo "\n Imagem gerada com sucesso! \n"
