@@ -9,6 +9,7 @@
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
    <a href="#memo-documentation">Documentation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#paperclips-references">References</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#thumbsup-how-to-contribute">How To Contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
@@ -72,6 +73,11 @@ I also created a google doc file to write some annotations about docker that i c
 if you want to see, go <a href="https://docs.google.com/document/d/1ghe5jtUINeTH8Y8UEfUdSIieXQihMY3En0iVcaq3Bq0/edit#" target="_blank">here</a>
 <br><br>
 If you note some wrong or mistake in any case when you are reading the docs, don't hesitate to contact me.
+
+## :paperclips: References
+
+<a href="https://docs.google.com/document/d/1ghe5jtUINeTH8Y8UEfUdSIieXQihMY3En0iVcaq3Bq0/edit#" target="_blank">Google Doc</a><br>
+<a href="https://github.com/Duduxs/api-docker-aws" target="_blank">Another Docker Project To Study</a><br>
 
 ## :thumbsup: How To Contribute
 
